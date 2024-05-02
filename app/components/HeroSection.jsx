@@ -42,11 +42,11 @@ export const HeroSection = () => {
 
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, optio.
+            I'm on the internet!
           </p>
 
           <div>
-            <button className="px-6 py-3 w-full rounded-full mr-4 text-black bg-white hover:bg-slate-200 sm:width-fit bg-gradient-to-br from-red-400 to-white">Contact Me</button>
+            <button className="px-6 py-3 w-full rounded-full mr-4 text-black bg-white hover:bg-slate-200 sm:width-fit bg-gradient-to-br from-red-400 to-white width-200">Contact Me</button>
 
             <button className="px-1 py-1 w-full rounded-full hover:bg-slate-800 text-white border mt-3 bg-gradient-to-br from-red-400 to-white">
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
