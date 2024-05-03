@@ -9,10 +9,10 @@ export const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <div className="col-span-7 place-self-center text-center sm:text-left w-100 pt-10 pl-20 justify-self-start">
           <h1 className="text-white mb-4 text-4xl lg:text-6xl sm:text-3xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">
-              Hi There! I'm {" "} 
+              Hi There! I'm{" "}
             </span>
             <br />
               <TypeAnimation
@@ -46,9 +46,9 @@ export const HeroSection = () => {
           </p>
 
           <div>
-            <button className="px-6 py-3 w-full rounded-full mr-4 text-black bg-white hover:bg-slate-200 sm:width-fit bg-gradient-to-br from-red-400 to-white width-200">Contact Me</button>
+            <button className="px-6 py-3 rounded-full mr-4 text-black bg-white hover:bg-slate-200 sm:width-fit bg-gradient-to-br from-red-400 to-white w-full sm:w-fit">Contact Me</button>
 
-            <button className="px-1 py-1 w-full rounded-full hover:bg-slate-800 text-white border mt-3 bg-gradient-to-br from-red-400 to-white">
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 text-white border mt-3 bg-gradient-to-br from-red-400 to-white">
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
                 Download CV
               </span>
