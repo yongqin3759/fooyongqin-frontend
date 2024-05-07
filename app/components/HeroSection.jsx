@@ -30,8 +30,6 @@ export const HeroSection = () => {
                 3000,
                 'Judoka',
                 3000,
-                'Derp',
-                3000,
 
                 
               ]}
