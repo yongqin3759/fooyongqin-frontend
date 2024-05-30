@@ -27,14 +27,14 @@ const projectsData = [
 
 const ProjectSection = () => {
   return (
-    <div>
-      <h2 className='text-center text-4xl font-bold text-white mt-4 mb-4'>My Projects</h2>
+    <section id='projects' className='py-14'>
+      <h2 className='text-center text-4xl font-bold text-white mb-14'>My Projects</h2>
       <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
         {projectsData.map((project, id) => 
           <ProjectCard key={id} {...project}/>
         )}
       </div>
-    </div>
+    </section>
   )
 }
 

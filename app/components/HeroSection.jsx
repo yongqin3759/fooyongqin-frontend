@@ -3,7 +3,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
+import Link from 'next/link'
 
+const RESUME_FILE = './Foo Yong Qin Resume.pdf'
 
 export const HeroSection = () => {
   return (
@@ -44,13 +46,19 @@ export const HeroSection = () => {
           </p>
 
           <div>
-            
+            <Link
+              href="/#contact"
+              className="px-6 py-3 rounded-full mr-4 text-black bg-white hover:bg-slate-200 sm:width-fit bg-gradient-to-br from-red-400 to-white w-full sm:w-fit inline-block"
+            >
+              Contact Me
+            </Link>
+            <Link className="px-1 py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 text-white border mt-3 bg-gradient-to-br from-red-400 to-white inline-block" href={RESUME_FILE} download={'Foo Yong Qin Resume.pdf'} target="_blank"
+    rel="noopener noreferrer">
 
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 text-white border mt-3 bg-gradient-to-br from-red-400 to-white">
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
                 Download CV
               </span>
-            </button>
+            </Link>
           </div>
             </div>
 
