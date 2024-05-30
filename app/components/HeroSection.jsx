@@ -44,7 +44,7 @@ export const HeroSection = () => {
           </p>
 
           <div>
-            <button className="px-6 py-3 rounded-full mr-4 text-black bg-white hover:bg-slate-200 sm:width-fit bg-gradient-to-br from-red-400 to-white w-full sm:w-fit">Contact Me</button>
+            
 
             <button className="px-1 py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 text-white border mt-3 bg-gradient-to-br from-red-400 to-white">
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>

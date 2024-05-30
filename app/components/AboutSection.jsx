@@ -34,8 +34,13 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul>
+        <li>2024 - DBS EASRE Top Team Award </li>
+        <li>{'------'}</li>
+        <li>2019 - Engineering Innovation and Design 1st Place </li>
+        <li>{'------'}</li>
         <li>Grade 8 Piano ABRSM</li>
         <li>Judo Orange Belt</li>
+
       </ul>
     )
   }
