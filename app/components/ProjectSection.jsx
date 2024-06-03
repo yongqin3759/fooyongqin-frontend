@@ -17,7 +17,7 @@ const projectsData = [
     previewUrl: "http://54.179.112.115/docs#"
   },
   {
-    title: "NUS Capstone Project - A+",
+    title: "NUS Capstone Project | A+",
     description: "An exploration on how to implement and optimize an API which deletes data in a timely manner with mongodb",
     imgUrl: "/images/mongodb.png",
     gitUrl: "https://github.com/yongqin3759/mongodb-ttl-experiment",
