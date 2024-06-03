@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import FYPProjectModal from './modals/FYPProjectModal'
 
 const projectsData = [
   {
@@ -22,7 +21,6 @@ const projectsData = [
     description: "An exploration on how to implement and optimize an API which deletes data in a timely manner with mongodb",
     imgUrl: "/images/mongodb.png",
     gitUrl: "https://github.com/yongqin3759/mongodb-ttl-experiment",
-    modal: <FYPProjectModal/>,
     downloadUrl: "./FinalReport.pdf"
   }
 ]
