@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import FYPModal from './modal/FYPModal'
+import RobotModal from './modal/robotmodal/RobotModal'
 
 const projectsData = [
   {
@@ -25,6 +26,13 @@ const projectsData = [
     gitUrl: "https://github.com/yongqin3759/mongodb-ttl-experiment",
     downloadUrl: "./pdfs/FinalReport.pdf",
     modal: <FYPModal/>
+  },
+  {
+    title: "Robot Project",
+    description: "My first React assignment, doesnt work on mobile.",
+    imgUrl: "/images/robot.png",
+    gitUrl: "https://github.com/yongqin3759/robot-react/",
+    modal: <RobotModal/>
   }
 ]
 

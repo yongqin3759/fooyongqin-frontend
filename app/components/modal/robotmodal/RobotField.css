@@ -1,0 +1,54 @@
+.RobotField {
+  text-align: center;
+}
+
+.RobotField-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.submit-button{
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+.submit-field-size{
+  position: absolute;
+  bottom: 220px;
+  left: 50px;
+}
+.submit-robot-speed{
+  position: absolute;
+  bottom: 340px;
+  left: 50px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .RobotField-logo {
+    animation: RobotField-logo-spin infinite 20s linear;
+  }
+}
+
+.RobotField-header {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.RobotField-link {
+  color: #61dafb;
+}
+
+@keyframes RobotField-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

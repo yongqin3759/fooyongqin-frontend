@@ -18,7 +18,7 @@ const Modal = ({ title, children, isOpen, setIsOpen }) => {
                 leaveFrom="opacity-100 transform-[scale(100%)]"
                 leaveTo="opacity-0 transform-[scale(95%)]"
               >
-                <DialogPanel className="w-full max-w-2xl rounded-xl bg-black p-6 backdrop-blur-2xl">
+                <DialogPanel className="w-full max-w-7xl rounded-xl bg-black p-6 backdrop-blur-2xl">
                   <DialogTitle as="h3" className="text-base/7 font-medium text-white mb-4">
                     {title}
                   </DialogTitle>
