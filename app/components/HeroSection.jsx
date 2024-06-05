@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
 import Link from 'next/link'
 
-const RESUME_FILE = './Foo Yong Qin Resume.pdf'
+const RESUME_FILE = './pdfs/Foo Yong Qin Resume.pdf'
 
 export const HeroSection = () => {
   return (

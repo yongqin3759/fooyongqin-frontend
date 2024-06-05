@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import FYPModal from './modal/FYPModal'
 
 const projectsData = [
   {
@@ -14,6 +15,7 @@ const projectsData = [
     description: "Classifying the severity of depression using tweets containing keywords relating to depression",
     imgUrl: "/images/llm.jpg",
     gitUrl: "https://github.com/yongqin3759/depression-backend",
+    downloadUrl: "./pdfs/Mentally Stable.pdf",
     previewUrl: "http://54.179.112.115/docs#"
   },
   {
@@ -21,14 +23,15 @@ const projectsData = [
     description: "An exploration on how to implement and optimize an API which deletes data in a timely manner with mongodb",
     imgUrl: "/images/mongodb.png",
     gitUrl: "https://github.com/yongqin3759/mongodb-ttl-experiment",
-    downloadUrl: "./FinalReport.pdf"
+    downloadUrl: "./pdfs/FinalReport.pdf",
+    modal: <FYPModal/>
   }
 ]
 
 const ProjectSection = () => {
   return (
     <section id='projects' className='py-14'>
-      <h2 className='text-center text-4xl font-bold text-white mb-14'>My Projects</h2>
+      <h2 className='text-center text-4xl font-bold text-white mb-14'>My Personal Projects</h2>
       <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
         {projectsData.map((project, id) => 
           <ProjectCard key={id} {...project}/>

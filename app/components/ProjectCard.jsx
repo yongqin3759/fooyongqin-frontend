@@ -1,8 +1,13 @@
-import React from "react";
+"use client"
+import React, {useState} from "react";
 import { CodeBracketIcon, EyeIcon, QuestionMarkCircleIcon, ArrowDownTrayIcon  } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Modal from "./modal/Modal";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, downloadUrl , modal}) => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
       <div
@@ -33,10 +38,11 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, downloadU
           }
 
           {
-            modal ? <div title="hello"
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            modal ? <div
+            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link" 
             >
-            <QuestionMarkCircleIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <QuestionMarkCircleIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" onClick={()=>setIsOpen(true)}/>
+            <Modal children={modal} isOpen={isOpen} setIsOpen={setIsOpen} title={title}/>
             </div> : null
           }
           
