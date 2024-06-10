@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import FYPModal from './modal/FYPModal'
 import RobotModal from './modal/robotmodal/RobotModal'
+import NLPModal from './modal/NLPModal'
 
 const projectsData = [
   {
@@ -17,7 +18,8 @@ const projectsData = [
     imgUrl: "/images/llm.jpg",
     gitUrl: "https://github.com/yongqin3759/depression-backend",
     downloadUrl: "./pdfs/Mentally Stable.pdf",
-    previewUrl: "http://54.179.112.115/docs#"
+    previewUrl: "http://54.179.112.115/docs#",
+    modal: <NLPModal/>
   },
   {
     title: "NUS Capstone Project | A+",

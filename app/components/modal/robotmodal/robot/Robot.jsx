@@ -5,7 +5,6 @@ import{useSpring,animated} from'react-spring'
 import classes from './robot.module.css'
 
 export const Robot = (props) => {
-  console.log(props.xPixels, props.yPixels)
     const {xyz} = useSpring({
         from: {xyz: [0, 0, 0]},
         xyz: [props.xPixels, -props.yPixels, 0],

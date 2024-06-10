@@ -1,5 +1,6 @@
 .RobotField {
   text-align: center;
+  height: 70vh;
 }
 
 .RobotField-logo {
@@ -31,11 +32,11 @@
 
 .RobotField-header {
   background-color: #282c34;
-  min-height: 80vh;
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 70vh;
+  justify-content: right;
+  padding-right: 50px;
   font-size: calc(10px + 2vmin);
   color: white;
 }

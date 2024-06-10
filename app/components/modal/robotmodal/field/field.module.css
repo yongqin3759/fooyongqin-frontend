@@ -8,7 +8,7 @@
 
 .Field{
     z-index: 0;
-    position: fixed;
+    position: absolute;
     margin:auto;
     display: flex;
     flex-direction: column-reverse;
