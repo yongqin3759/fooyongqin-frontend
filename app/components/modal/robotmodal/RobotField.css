@@ -1,6 +1,5 @@
 .RobotField {
   text-align: center;
-  height: 70vh;
 }
 
 .RobotField-logo {
@@ -8,11 +7,6 @@
   pointer-events: none;
 }
 
-.submit-button{
-  position: absolute;
-  bottom: 100px;
-  left: 50px;
-}
 .submit-field-size{
   position: absolute;
   bottom: 220px;
@@ -31,10 +25,8 @@
 }
 
 .RobotField-header {
-  background-color: #282c34;
   border-radius: 20px;
-  display: flex;
-  height: 70vh;
+  height: fit-content;
   justify-content: right;
   padding-right: 50px;
   font-size: calc(10px + 2vmin);

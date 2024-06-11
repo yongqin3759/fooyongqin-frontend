@@ -102,13 +102,12 @@ const RobotField = ()=> {
 
   return (
     <div className="RobotField">
-      
-      <div className="RobotField-header">
-      <div className='w-[300px] mr-[760px] text-left text-sm'>
+      <div className='flex bg-[#282c34] rounded-lg'>
+      <div className='max-w-[350px] min-w-[200px] text-left text-sm mx-5'>
 
         <h3 className='text-lg font-bold'>Requirements for the project</h3>
-        <div class="text-lef  p-6 bg-gray-100 rounded-lg shadow-md">
-  <ul class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 text-gray-700">
+        <div class="flex flex-col ">
+  <ul class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 text-gray-700 text-left  p-6 bg-gray-100 rounded-lg shadow-md mb-20">
     <li>✅</li>
     <li>Draw the position of the robot in a box.</li>
     <li>✅</li>
@@ -126,8 +125,18 @@ const RobotField = ()=> {
     <li>✅</li>
     <li>Upon submission of a new trajectory, nullify previous commands, and use the new trajectory instead.</li>
   </ul>
+    <div className="submit-button text-black bg-blue-500  font-bold px-4 rounded text-sm mb-8">
+          <label className='block mb-2'>
+            Coordinates:<br/>
+            <input type="text" className="coordinates block mb-0 w-[200px]" value={coordinates} onChange={(e)=>setcoordinates(e.target.value)}/>
+          </label>
+          <button className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded' onClick={()=>{handleSubmitCoordinate(coordinates)}}>Submit
+          </button>
+        </div>
 </div>
       </div>
+
+      <div className="RobotField-header">
           <Field
             onRestCallback={parentRestCallback}
             isAnimationComplete={isAnimationComplete}
@@ -144,14 +153,7 @@ const RobotField = ()=> {
           </label><br/>
           <input type="submit" value="Submit" />
         </form> */}
-        <div className="submit-button text-black bg-blue-500  font-bold px-4 rounded text-sm">
-          <label className='block mb-2'>
-            Coordinates:<br/>
-            <input type="text" className="coordinates block mb-0 w-[200px]" value={coordinates} onChange={(e)=>setcoordinates(e.target.value)}/>
-          </label>
-          <button className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded' onClick={()=>{handleSubmitCoordinate(coordinates)}}>Submit
-          </button>
-        </div>
+        
         {/* <form className="submit-robot-speed text-black"onSubmit={(e)=>{handleRobotSpeed(e)}}>
           <label>
             Robot Speed:<br/>
@@ -160,6 +162,9 @@ const RobotField = ()=> {
           <input type="submit" value="Submit" onChange={(e)=>{handleRobotSpeed(e)}}/>
         </form> */}
       </div>
+      
+      </div>
+      
     </div>
   );
 }

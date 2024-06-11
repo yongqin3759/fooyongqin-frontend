@@ -2,7 +2,7 @@ import React from 'react'
 
 const NLPModal = () => {
   return (
-    <div class="mx-auto p-2 shadow-lg">
+    <div class="mx-auto p-2 shadow-lg text-white">
       
         <p class="mb-6">This is our group project predicting mental health status using two databases related to mental illness.</p>
         
