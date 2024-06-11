@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard'
 import FYPModal from './modal/FYPModal'
 import RobotModal from './modal/robotmodal/RobotModal'
 import NLPModal from './modal/NLPModal'
+import PortfolioModal from './modal/PortfolioModal'
 
 const projectsData = [
   {
@@ -10,7 +11,7 @@ const projectsData = [
     description: "My portfolio website to show what I can do",
     imgUrl: "/images/myportfolioproject.png",
     gitUrl: "https://github.com/yongqin3759/fooyongqin-frontend",
-    previewUrl: "https://fooyongqin.com/"
+    modal: <PortfolioModal/>
   },
   {
     title: "Sentiment Analysis Model",
@@ -31,11 +32,17 @@ const projectsData = [
   },
   {
     title: "Robot Project",
-    description: "My first React assignment, doesnt work on mobile.",
+    description: "My first React assignment, only shows up nicely on desktop browser.",
     imgUrl: "/images/robot.png",
     gitUrl: "https://github.com/yongqin3759/robot-react/",
     modal: <RobotModal/>
-  }
+  },
+  {
+    title: "Effects of Glucose-Loaded Nanocapsules on Flight Endurance in Beetles | NTU FYP",
+    description: "Cyborg Beetles",
+    imgUrl: "/images/beetle.png",
+    modal: <div>One of my more interesting project I am happy to discuss, contact me for more info on this</div>
+  },
 ]
 
 const ProjectSection = () => {
