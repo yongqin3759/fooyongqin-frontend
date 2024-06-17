@@ -29,7 +29,7 @@ const NLPModal = () => {
 
         <div class="bg-green-50 border-l-4 border-green-500 text-green-700 p-4 mb-6">
           <p >
-            Originally I was hosting this website using AWS ECS and Fargate, however costs were too high so I decided to remove the service.
+            Originally I was hosting this website using AWS ECS and Fargate, however costs were too high so I decided to remove the service. You can run it locally if you follow the steps in the README on the github link.
           </p>
 
         </div>
