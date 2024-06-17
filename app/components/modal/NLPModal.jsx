@@ -26,6 +26,13 @@ const NLPModal = () => {
         <p class="mb-6">Luckily I found a better model to train the data. BERT (Bidirectional Encoder Representations from Transformers). </p>
 
         <p >Ultimately, I managed to get better predictions on the first depression severity related database using BERT with a 75% accuracy. I have attached my groups report on the card so you can download and view it.</p>
+
+        <div class="bg-green-50 border-l-4 border-green-500 text-green-700 p-4 mb-6">
+          <p >
+            Originally I was hosting this website using AWS ECS and Fargate, however costs were too high so I decided to remove the service.
+          </p>
+
+        </div>
     </div>
   )
 }

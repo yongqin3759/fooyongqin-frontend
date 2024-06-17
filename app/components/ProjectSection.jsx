@@ -19,7 +19,6 @@ const projectsData = [
     imgUrl: "/images/llm.jpg",
     gitUrl: "https://github.com/yongqin3759/depression-backend",
     downloadUrl: "./pdfs/Mentally Stable.pdf",
-    previewUrl: "http://54.179.112.115/docs#",
     modal: <NLPModal/>
   },
   {
